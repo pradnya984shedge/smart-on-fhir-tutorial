@@ -125,20 +125,7 @@
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
-      $('#hdl').html(p.hdl);
-      <table>
-          <tr>
-              <td>p.fname</td>
-              <td>p.lname</td>
-              <td>p.gender</td>
-              <td>p.birthdate</td>
-              <td>p.height</td>
-              <td>p.systolicbp</td>
-              <td>p.diastolicbp</td>
-              <td>p.ldl</td>
-              <td>p.hdl</td>
-          </tr>
-      </table>
+    $('#hdl').html(p.hdl);
   };
 
 })(window);
