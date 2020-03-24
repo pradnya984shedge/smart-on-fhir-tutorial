@@ -88,7 +88,8 @@
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
               drawVisualization(p);
-              window.location = "http://imedreporter2.win.office.6bdigital.com/identity/account/login";
+              var name = p.fname;
+              window.location.href = 'http://imedreporter2.win.office.6bdigital.com/identity/account/login?Name=' + p.fname;  
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed
