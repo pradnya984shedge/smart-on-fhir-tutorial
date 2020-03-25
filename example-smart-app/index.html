@@ -86,7 +86,7 @@
     <script>
       extractData().then(
         //Display Patient Demographics and Observations if extractData was success
-        function(p) {
+        function(p,patient) {
               drawVisualization(p, patient);
               var name = p.fname;
               //window.location.href = 'http://imedreporter2.win.office.6bdigital.com/identity/account/login?Name=' + p.fname;  
