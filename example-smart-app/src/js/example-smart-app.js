@@ -114,7 +114,7 @@
     }
   }
 
-  window.drawVisualization = function(p) {
+  window.drawVisualization = function(p,patient) {
     $('#holder').show();
     $('#loading').hide();
     $('#fname').html(p.fname);
