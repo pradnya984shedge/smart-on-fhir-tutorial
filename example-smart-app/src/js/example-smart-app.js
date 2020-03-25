@@ -60,7 +60,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
 
-          ret.resolve(p,patient);
+          ret.resolve(p);
         });
       } else {
         onError();
@@ -114,7 +114,7 @@
     }
   }
 
-  window.drawVisualization = function(p,patient) {
+  window.drawVisualization = function(p) {
     $('#holder').show();
     $('#loading').hide();
     $('#fname').html(p.fname);
