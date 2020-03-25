@@ -89,8 +89,9 @@
         function(p) {
               drawVisualization(p);
               var name = p.fname;
-              var obj = JSON.parse(p);
-              window.location.href = 'http://imedreporter2.win.office.6bdigital.com/identity/account/login?Name=' + obj;  
+              var obj=JSON.stringify(p);
+              //var obj = JSON.parse(p);
+              //window.location.href = 'http://imedreporter2.win.office.6bdigital.com/identity/account/login?Name=' + obj;  
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed
