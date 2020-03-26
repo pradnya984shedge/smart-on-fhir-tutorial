@@ -17403,7 +17403,7 @@ BBClient.authorize = function(params, errback){
         var combinedObject = $.extend(true, params, { 'tokenResponse' : {state: state} });
         sessionStorage[state] = JSON.stringify(combinedObject);
       }
-
+		alert(client.redirect_uri);
       window.location.href = client.redirect_uri + "?state="+encodeURIComponent(state);
       return;
     }
